@@ -18,7 +18,8 @@
     },
     "license": "MIT",
     "author": "unarmedguitar <unarmedguitar@protonmail.com> (https://github.com/unarmedguitar/)",
-    "funding": [{
+    "funding": [
+        {
             "type": "individual",
             "url": "https://streamelements.com/unarmedguitar/tip"
         },
