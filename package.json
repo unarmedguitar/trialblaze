@@ -1,0 +1,45 @@
+{
+    "name": "trialblaze",
+    "version": "1.0.0",
+    "description": "A chatbot built with botbuilder-adapter-trovo for Trovo.live",
+    "keywords": [
+        "bot",
+        "chatbot",
+        "trovo",
+        "chat",
+        "commands",
+        "machine learning",
+        "artificial intelligence"
+    ],
+    "homepage": "https://github.com/unarmedguitar/trialblaze#readme",
+    "bugs": {
+        "url": "https://github.com/unarmedguitar/trialblaze/issues",
+        "email": "unarmedguitar@protonmail.com"
+    },
+    "license": "MIT",
+    "author": "unarmedguitar <unarmedguitar@protonmail.com> (https://github.com/unarmedguitar/)",
+    "funding": [{
+            "type": "individual",
+            "url": "https://streamelements.com/unarmedguitar/tip"
+        },
+        {
+            "type": "patreon",
+            "url": "https://www.patreon.com/unarmedguitar"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/unarmedguitar/trialblaze.git"
+    },
+    "main": "bot.js",
+    "scripts": {
+        "start": "node bot.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "botbuilder": "^4.11.0",
+        "botbuilder-adapter-trovo": "file:botbuilder-adapter-trovo",
+        "botkit": "^4.10.0"
+    },
+    "devDependencies": {}
+}
