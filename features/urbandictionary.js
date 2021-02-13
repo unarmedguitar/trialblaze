@@ -1,6 +1,6 @@
 const https = require('https');
 
-const wordwrap = str => str.match(/.{1,250}(\s|$)\S+?(\s|$)/g) || '';
+const wordwrap = str => str.match(/.{1,280}(\s|$)\S+?(\s|$)/g) || '';
 
 const url = new URL('https://api.urbandictionary.com/v0/tooltip');
 
@@ -38,7 +38,7 @@ module.exports = function(controller) {
             const defs = wordwrap(definition);
             for (const def of defs) {
                 await bot.say(def);
-                await bot.getConfig('adapter').getPage().waitForTimeout(1500);
+                await bot.getConfig('adapter').getPage().waitForTimeout(3000);
             }
         } else {
             await bot.say(definition);
