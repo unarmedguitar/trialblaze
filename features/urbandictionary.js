@@ -28,17 +28,17 @@ const getDefinition = function(term) {
 };
 
 module.exports = function(controller) {
-    controller.hears(/^!ud\s/, 'message', async(bot, message) => {
-        if (message.args.length < 2) {
+    controller.hears([/^!ud\s/], ['message'], async(bot, message) => {
+        if (message.args.length < 1) {
             return;
         }
-        const term = message.args.splice(1).join(' ');
+        const term = message.args.join(' ');
         const definition = await getDefinition(term);
         if (definition.length > 300) {
             const defs = wordwrap(definition);
             for (const def of defs) {
                 await bot.say(def);
-                await bot.getConfig('adapter').getPage().waitForTimeout(3000);
+                await controller.adapter.getPage().waitForTimeout(3500);
             }
         } else {
             await bot.say(definition);

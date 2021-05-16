@@ -1,11 +1,14 @@
 # Storage Directory
-storage/
+storage
 
 # botbuilder-adapter-trovo Directory
-botbuilder-adapter-trovo/
+botbuilder-adapter-trovo
 
 # package-lock.json
 package-lock.json
+
+# botkit-plugin-obs Directory
+botkit-plugin-obs
 
 # Logs
 logs

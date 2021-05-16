@@ -22,8 +22,11 @@ const answers = [
 ];
 
 module.exports = function(controller) {
-    controller.hears('^!8ball', 'message', async(bot, message) => {
-        await bot.say(`@${message.displayName}: ${answers[
+    controller.hears([/^!8ball\s/], ['message'], async(bot, message) => {
+        if (message.args.length < 1) {
+            return;
+        }
+        await bot.say(`@${message.displayName} ${answers[
             Math.floor(Math.random() * answers.length)]}`);
     });
 }

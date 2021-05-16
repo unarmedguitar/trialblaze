@@ -1,6 +1,8 @@
 const { Botkit } = require('botkit');
 const { MemoryStorage } = require('botbuilder');
 const { TrovoAdapter } = require('botbuilder-adapter-trovo');
+const dotenv = require('dotenv');
+dotenv.config();
 
 const adapter = new TrovoAdapter();
 

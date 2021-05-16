@@ -9,7 +9,7 @@ You need node.js and npmjs installed.
 `git clone https://github.com/unarmedguitar/trialblaze`
 
 ### For Testers:
-`Click on the Code button and at the bottom of the dialog is Download ZIP`
+`Click on the Code button then at the bottom of the dialog is Download ZIP`
 This will download trialblaze-main.zip
 `Extract the folder`
 Once extracted you need to open up an admin powershell or terminal and navigate inside
@@ -21,8 +21,11 @@ inside admin powershell:
 
 `npm install`
 
-Edit your .env file and fill in your bot details. This file is maybe hidden so you should
-show hidden files to see it.
+*There will be warnings for deprecated packages used by botkit/botuilder which can be ignored.* 
+
+You should create a new Trovo account to use as your bot.
+Then edit the .env file and fill it with your bot credentials. This file could be hidden so
+you should show hidden files.
 
 `npm start`
 
