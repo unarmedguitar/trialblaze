@@ -39,7 +39,7 @@
     },
     "dependencies": {
         "botbuilder": "^4.14.1",
-        "botbuilder-adapter-trovo": "^1.0.4",
+        "botbuilder-adapter-trovo": "^1.0.5",
         "botkit": "^4.10.0",
         "dotenv": "^10.0.0"
     }
