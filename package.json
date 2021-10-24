@@ -1,6 +1,6 @@
 {
     "name": "trialblaze",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A chatbot built with botbuilder-adapter-trovo for Trovo.live",
     "keywords": [
         "bot",
@@ -18,8 +18,7 @@
     },
     "license": "MIT",
     "author": "unarmedguitar <unarmedguitar@protonmail.com> (https://github.com/unarmedguitar/)",
-    "funding": [
-        {
+    "funding": [{
             "type": "individual",
             "url": "https://streamelements.com/unarmedguitar/tip"
         },
