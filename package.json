@@ -38,7 +38,7 @@
         "postinstall": "echo \"Edit your .env file with your bot details\""
     },
     "dependencies": {
-        "botbuilder": "^4.14.1",
+        "botbuilder": "^4.21.4",
         "botbuilder-adapter-trovo": "^1.0.6",
         "botkit": "^4.10.0",
         "dotenv": "^10.0.0"
